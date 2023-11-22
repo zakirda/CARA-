@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1776px;
+            height: 424px;
+            position: absolute;
+            top: 111px;
+            left: 8px;
+            z-index: 1;
+        }
+        .auto-style2 {
+            width: 1776px;
+            height: 79px;
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            z-index: 1;
+            background-color: #E3E6F3;
+        }
+        .auto-style3 {
+            position: absolute;
+            top: 17px;
+            left: 1069px;
+            z-index: 1;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: large;
+            color: #000000;
+            text-decoration: none;
+        }
+        .auto-style4 {
+            position: absolute;
+            top: 5px;
+            left: 1182px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: large;
+            z-index: 1;
+            color: #000000;
+            text-decoration: none;
+        }
+        .auto-style5 {
+            position: absolute;
+            top: 2px;
+            left: 1286px;
+            z-index: 1;
+            width: 40px;
+            height: 40px;
+        }
+        .auto-style6 {
+            position: absolute;
+            top: 3px;
+            left: 1380px;
+            z-index: 1;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: large;
+            right: 337px;
+            color: #000000;
+            text-decoration: none;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 5px;
+            left: 1488px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: large;
+            z-index: 1;
+            color: #000000;
+            text-decoration: none;
+        }
+        .auto-style8 {
+            position: absolute;
+            top: 3px;
+            z-index: 1;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: large;
+            color: #000000;
+            text-decoration: none;
+            right: 101px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="auto-style1">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div class="auto-style2">
+            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style4" NavigateUrl="~/shope2.aspx">Shop</asp:HyperLink>
+            <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style5" ImageUrl="~/img/-shopping-cart_90604 (2).png" PostBackUrl="~/AddtoCart.aspx" />
+            <asp:HyperLink ID="HyperLink3" runat="server" CssClass="auto-style6" NavigateUrl="~/bloge.aspx">Blog</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink4" runat="server" CssClass="auto-style7" NavigateUrl="~/userlogin.aspx">Login</asp:HyperLink>
+            <asp:Image ID="Image1" runat="server" Height="76px" ImageUrl="~/img/logo.png" Width="205px" />
+            <asp:HyperLink ID="HyperLink5" runat="server" CssClass="auto-style8" NavigateUrl="~/logoutuser.aspx">Logout</asp:HyperLink>
+        </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style3" NavigateUrl="~/home1.aspx">Home</asp:HyperLink>
+    </form>
+</body>
+</html>
